@@ -18,7 +18,7 @@ page. Still an array seem accurate. As soon as we sort
 items, the array no longer matters. It is just a container for items. 
 
 Next, we often operate on a single item at a time. We edit an item. We remove an item. Often,
-this results repeated look-ups. A hash, keyed on the right detail, makes sense. 
+this results in repeated look-ups. A hash, keyed on the right detail, makes sense. 
 
 Lets work through an example starting by pivoting our team member's states from
 ```javascript

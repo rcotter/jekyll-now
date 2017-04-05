@@ -68,7 +68,7 @@ of generating a whole new state object for each individual change.
 Well, this is neat. On one hand we get a lot more safety. On the other we
 introduce what seems to be a bit heavy weight of a tool.
  
-How does this work with Angular? Some of the articles in [Left-overs]({{ site.baseurl }}{% post_url 2017-4-3-angular1-redux-10-left-overs %})
+How does this work with Angular? Some of the articles in [Left-overs]({{ site.baseurl }}{% post_url 2017-4-3-angular1-redux-10-left-overs %}){:target="_blank"}
 dive deep into performance. To summarize, it works out pretty good. 
 
 The key is

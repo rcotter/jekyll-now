@@ -46,7 +46,7 @@ back!
 Your state is being used to drive the app. No button clicks or user actions
 are being triggered. ...but ajax will be re-triggered. However, it will be ignored.
 It's results will not modify the recorded state. I imagined it would make 
-a mess backend data. Thus, I introduced a couple of discrete workarounds to detect 
+a mess of backend data. Thus, I introduced a couple of discrete workarounds to detect 
 when the code is being exercised by state playback and in those case skip over ajax calls.
 
 This is a pretty powerful tool. For a great debugging demo [watch this video](https://www.youtube.com/watch?v=xsSnOQynTHs){:target="_blank"}

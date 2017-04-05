@@ -20,7 +20,7 @@ Checkout the action bar added to the [team-page.html](https://gitlab.com/rcotter
   </button>
 
   <div class="adding-count" ng-if="0 < $ctrl.addingCount">
-    Adding {{$ctrl.addingCount}}
+    Adding {{ $ctrl.addingCount }}
   </div>
 
   <div class="waiting" ng-if="0 < $ctrl.addingCount"></div>

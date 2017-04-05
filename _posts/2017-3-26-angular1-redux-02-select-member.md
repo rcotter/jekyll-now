@@ -11,7 +11,8 @@ which members to remove.
 ![_config.yml]({{ site.baseurl }}/images/angular1-redux/angular1-redux-02.gif)
 
 ### Add a checkbox for each member
-Open `member-table.html` and you'll see new checkbox inputs bound to state and click events:
+Open [member-table.html](https://gitlab.com/rcotter-onbyone/angular-1-redux-blog/compare/9273463e...eb2c62fa){:target="_blank"}
+and you'll see new checkbox inputs bound to state and click events:
 ```javascript
 ng-click="$ctrl.checkClicked(member)"
 ng-checked="member.selected"
@@ -24,7 +25,7 @@ Now of course we must provide state to bind to and handle our `checkClicked` han
 Open and review [member-table.controller.js](https://gitlab.com/rcotter-onbyone/angular-1-redux-blog/compare/9273463e...eb2c62fa){:target="_blank"}. 
 Since this is our first close look there are a few details to note.
 
-First, `ngRedux` is wired up with our team management Redux actions. This binds
+First, [ngRedux](https://github.com/angular-redux/ng-redux){:target="_blank"} is wired up with our team management Redux actions. This binds
 our actions to `this` of the component, providing a clean way to access them. 
 This also grants access to our calculated Redux state. We'll never
 modify it within our component but we'll inspect and render it.
@@ -170,8 +171,8 @@ is a way to merge objects. In this case the first object is empty, thus the
 result is a new object with its inherent new reference.
 
 Finally, the mutated state is returned. Thinking back to our component that is
-wired up to `ngRedux`, it immediately receives our new state and through object
-reference evaluation decides whether render.
+wired up to [ngRedux](https://github.com/angular-redux/ng-redux){:target="_blank"}, it immediately receives our new state and through object
+reference evaluation decides whether to render.
 
 It sure seems like a lot of boiler plate. But the pattern is super clean and
 consistent.

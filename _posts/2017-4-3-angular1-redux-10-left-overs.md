@@ -3,7 +3,7 @@ layout: post
 title: Using Redux to Decouple Angular 1.x - Part 10 Left-overs
 ---
 
-We've worked through a lot. Redux is very power and nicely constrained. I
+We've worked through a lot. Redux is very power yet nicely constrained. I
 think it achieves its goal of transparency and consistency. I'd also add in magic
 quadrant goals like "promotes cohesiveness and composition".
 
@@ -27,12 +27,12 @@ being super easy to understand and maintain.
 It seems to me that many of the intricacies of Angular are mitigated. Digest issues nearly disappear.
 We avoid `ngModel` and `ngChange`.
 
-What is most appealing to me is how we extract business logic away from our framework into pure
-javascript. It seems that this paves the road to migrating to another framework. The real value
+What is most appealing to me is how we have clear guidance against which to extract business logic away from our framework 
+into pure javascript. It seems that this paves the road to migrating to another framework. The real value
 in our code remains; clean, easily understood and very testable.
 
 ## Performance
-But, how does this all perform? Standing on the shoulders of giants
+But, how does this all perform? Let's stand on the shoulders of giants.
 
 * [An index of articles](http://redux.js.org/docs/faq/Performance.html){:target="_blank"}
 * [Part 1](http://blog.mgechev.com/2015/03/02/immutability-in-angularjs-immutablejs/){:target="_blank"}

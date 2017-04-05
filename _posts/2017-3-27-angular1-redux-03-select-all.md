@@ -7,11 +7,11 @@ title: Using Redux to Decouple Angular 1.x - Part 03 - An action to (un)select a
 
 Remember that header checkbox? Up until now it  has correctly reflected
 its current state but clicking it had no effect. That's alright. We were
-smart enought to disable it. Let enable it and make it useful.
+smart enough to disable it. Let's enable it and make it useful.
 
 ![_config.yml]({{ site.baseurl }}/images/angular1-redux/angular1-redux-03.gif)
 
-We'll start in the [template](https://gitlab.com/rcotter-onbyone/angular-1-redux-blog/compare/eb2c62fa...f27e55a4){:target="_blank"}:
+We'll start in the [member-table.html](https://gitlab.com/rcotter-onbyone/angular-1-redux-blog/compare/eb2c62fa...f27e55a4){:target="_blank"}:
 ```javascript
 ng-click="$ctrl.allSelectedClicked()"
 ng-disabled="false"/>
