@@ -36,7 +36,7 @@ I wondered if it could be "the" pattern for clear and "safe" refactoring of a le
 * Pure, side effect free, **reducer** functions clone and recalculate a global **state**.
 * Views render that state.
  
-Note that the data flow is uni-directional. CQRS comes to mind.
+Note that the data flow is uni-directional. [CQRS](https://martinfowler.com/bliki/CQRS.html){:target="_blank"} comes to mind.
 
 ![_config.yml]({{ site.baseurl }}/images/angular1-redux/flow.png)
 
